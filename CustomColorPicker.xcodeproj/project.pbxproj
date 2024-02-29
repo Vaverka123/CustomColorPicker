@@ -13,6 +13,10 @@
 		4D0F20AE2B8CACCE0086256E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D0F20AD2B8CACCE0086256E /* Preview Assets.xcassets */; };
 		4D0F20B52B8CADC50086256E /* WheelColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F20B42B8CADC50086256E /* WheelColorPickerView.swift */; };
 		4D0F20B72B8CBF4A0086256E /* GridColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F20B62B8CBF4A0086256E /* GridColorPickerView.swift */; };
+		4D5365162B90A81700613393 /* DefaultColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5365152B90A81700613393 /* DefaultColorPickerView.swift */; };
+		4D53651B2B90AD9C00613393 /* GridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D53651A2B90AD9C00613393 /* GridViewModel.swift */; };
+		4D53651F2B90B0E700613393 /* GridModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D53651E2B90B0E700613393 /* GridModel.swift */; };
+		4D5365232B90B38700613393 /* WheelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5365222B90B38700613393 /* WheelModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,10 @@
 		4D0F20AD2B8CACCE0086256E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4D0F20B42B8CADC50086256E /* WheelColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelColorPickerView.swift; sourceTree = "<group>"; };
 		4D0F20B62B8CBF4A0086256E /* GridColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridColorPickerView.swift; sourceTree = "<group>"; };
+		4D5365152B90A81700613393 /* DefaultColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultColorPickerView.swift; sourceTree = "<group>"; };
+		4D53651A2B90AD9C00613393 /* GridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewModel.swift; sourceTree = "<group>"; };
+		4D53651E2B90B0E700613393 /* GridModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridModel.swift; sourceTree = "<group>"; };
+		4D5365222B90B38700613393 /* WheelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +64,9 @@
 			isa = PBXGroup;
 			children = (
 				4D0F20A62B8CACCC0086256E /* CustomColorPickerApp.swift */,
-				4D0F20A82B8CACCC0086256E /* ContentView.swift */,
-				4D0F20B42B8CADC50086256E /* WheelColorPickerView.swift */,
-				4D0F20B62B8CBF4A0086256E /* GridColorPickerView.swift */,
+				4D5365172B90AC9900613393 /* Model */,
+				4D5365182B90ACB100613393 /* View */,
+				4D5365192B90ACB900613393 /* ViewModel */,
 				4D0F20AA2B8CACCE0086256E /* Assets.xcassets */,
 				4D0F20AC2B8CACCE0086256E /* Preview Content */,
 			);
@@ -71,6 +79,34 @@
 				4D0F20AD2B8CACCE0086256E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4D5365172B90AC9900613393 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4D53651E2B90B0E700613393 /* GridModel.swift */,
+				4D5365222B90B38700613393 /* WheelModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4D5365182B90ACB100613393 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4D0F20A82B8CACCC0086256E /* ContentView.swift */,
+				4D5365152B90A81700613393 /* DefaultColorPickerView.swift */,
+				4D0F20B62B8CBF4A0086256E /* GridColorPickerView.swift */,
+				4D0F20B42B8CADC50086256E /* WheelColorPickerView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4D5365192B90ACB900613393 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4D53651A2B90AD9C00613393 /* GridViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,8 +179,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D53651B2B90AD9C00613393 /* GridViewModel.swift in Sources */,
+				4D53651F2B90B0E700613393 /* GridModel.swift in Sources */,
+				4D5365162B90A81700613393 /* DefaultColorPickerView.swift in Sources */,
 				4D0F20A92B8CACCC0086256E /* ContentView.swift in Sources */,
 				4D0F20A72B8CACCC0086256E /* CustomColorPickerApp.swift in Sources */,
+				4D5365232B90B38700613393 /* WheelModel.swift in Sources */,
 				4D0F20B72B8CBF4A0086256E /* GridColorPickerView.swift in Sources */,
 				4D0F20B52B8CADC50086256E /* WheelColorPickerView.swift in Sources */,
 			);

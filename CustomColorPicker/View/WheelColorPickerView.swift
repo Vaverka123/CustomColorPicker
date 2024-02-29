@@ -73,17 +73,6 @@ struct WheelColorPickerView: View {
     }
 }
 
-fileprivate struct ColorRow:View {
-    
-    var hueValue: Int
-    let numberOfColorStops: Int = 20
-    
-    var body: some View {
-        Color(hue: Double(hueValue) / Double(numberOfColorStops),
-              saturation: 1,
-              brightness: 1)
-    }
-}
 
 #Preview {
     WheelColorPickerView()
